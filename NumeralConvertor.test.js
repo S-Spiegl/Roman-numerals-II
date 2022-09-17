@@ -22,4 +22,8 @@ describe('makeNumeral', () => {
     let numeralConvertor = new NumeralConvertor
     expect(numeralConvertor.makeNumeral(5)).toEqual('V')
   })
+  it('handles 6', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(6)).toEqual('VI')
+  })
 })
