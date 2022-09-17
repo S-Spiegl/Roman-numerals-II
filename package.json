@@ -1,0 +1,20 @@
+{
+  "name": "roman-numerals-ii",
+  "version": "1.0.0",
+  "description": "Create a function taking a positive integer as its parameter and returning a string containing the Roman Numeral representation of that integer.",
+  "main": "makeNumeral.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/S-Spiegl/Roman-numerals-II.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/S-Spiegl/Roman-numerals-II/issues"
+  },
+  "homepage": "https://github.com/S-Spiegl/Roman-numerals-II#readme"
+}
