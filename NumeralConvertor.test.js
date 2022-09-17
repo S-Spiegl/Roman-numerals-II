@@ -14,12 +14,12 @@ describe('makeNumeral', () => {
     let numeralConvertor = new NumeralConvertor
     expect(numeralConvertor.makeNumeral(3)).toEqual('III')
   })
-  // it('handles 4', () => {
-  //   let numeralConvertor = new NumeralConvertor
-  //   expect(numeralConvertor.makeNumeral(4)).toEqual('IV')
-  // })
-  // it('handles 5', () => {
-  //   let numeralConvertor = new NumeralConvertor
-  //   expect(numeralConvertor.makeNumeral(5)).toEqual('V')
-  // })
+  it('handles 4', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(4)).toEqual('IV')
+  })
+  it('handles 5', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(5)).toEqual('V')
+  })
 })

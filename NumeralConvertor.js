@@ -2,8 +2,9 @@ class NumeralConvertor {
   constructor(){
     this.output = ''
     this.symbols = [
-      ["I", 1],
-      ["IV", 4]
+      ["V", 5],
+      ["IV", 4],
+      ["I", 1]
     ]
   }
   makeNumeral = (input) => {
