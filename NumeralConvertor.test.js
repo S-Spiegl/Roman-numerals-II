@@ -26,4 +26,16 @@ describe('makeNumeral', () => {
     let numeralConvertor = new NumeralConvertor
     expect(numeralConvertor.makeNumeral(6)).toEqual('VI')
   })
+  it('handles 7', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(7)).toEqual('VII')
+  })
+  it('handles 8', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(8)).toEqual('VIII')
+  })
+  it('handles 9', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(9)).toEqual('IX')
+  })
 })
