@@ -8,6 +8,8 @@ makeNumeral = (input) => {
       return 'III'
     case 4:
       return 'IV';
+    case 5:
+      return 'V';
   }
   
 }

@@ -13,5 +13,8 @@ describe('makeNumeral', () => {
   it('handles 4', () => {
     expect(makeNumeral(4)).toEqual('IV')
   })
+  it('handles 5', () => {
+    expect(makeNumeral(5)).toEqual('V')
+  })
 })
 
