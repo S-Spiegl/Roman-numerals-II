@@ -1,5 +1,5 @@
 makeNumeral = (input) => {
-  output = []
+  output = ''
   // switch(input){
   //   case 1:
   //     return 'I'
@@ -14,16 +14,16 @@ makeNumeral = (input) => {
   // }
   if(input <= 3){
     for(let i = 0; i < input; i++){
-      output.push('I')
+      output += 'I'
     }
   }
   if(input == 4){
-    output.push('IV')
+    output += 'IV'
   }
   if(input == 5){
-    output.push('V')
+    output += 'V'
   }
-  return output.join('')
+  return output
 }
 
 module.exports = makeNumeral
