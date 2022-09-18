@@ -62,4 +62,24 @@ describe('makeNumeral', () => {
     let numeralConvertor = new NumeralConvertor
     expect(numeralConvertor.makeNumeral(20)).toEqual('XX')
   })
+  it('handles 30', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(30)).toEqual('XXX')
+  })
+  it('handles 29', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(29)).toEqual('XXIX')
+  })
+  it('handles 39', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(39)).toEqual('XXXIX')
+  })
+  it('handles 40', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(40)).toEqual('XL')
+  })
+  it('handles 49', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(49)).toEqual('XLIX')
+  })
 })
