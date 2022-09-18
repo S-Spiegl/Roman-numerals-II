@@ -110,5 +110,13 @@ describe('makeNumeral', () => {
     let numeralConvertor = new NumeralConvertor
     expect(numeralConvertor.makeNumeral(100)).toEqual('C')
   })
+  it('handles 399', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(399)).toEqual('CCCXCIX')
+  })
+  it('handles 400', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(400)).toEqual('CD')
+  })
 
 })
