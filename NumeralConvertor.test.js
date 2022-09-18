@@ -82,4 +82,33 @@ describe('makeNumeral', () => {
     let numeralConvertor = new NumeralConvertor
     expect(numeralConvertor.makeNumeral(49)).toEqual('XLIX')
   })
+  it('handles 60', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(60)).toEqual('LX')
+  })
+  it('handles 69', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(69)).toEqual('LXIX')
+  })
+  it('handles 70', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(70)).toEqual('LXX')
+  })
+  it('handles 79', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(79)).toEqual('LXXIX')
+  })
+  it('handles 90', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(90)).toEqual('XC')
+  })
+  it('handles 99', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(99)).toEqual('XCIX')
+  })
+  it('handles 100', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(100)).toEqual('C')
+  })
+
 })
