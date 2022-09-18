@@ -38,4 +38,12 @@ describe('makeNumeral', () => {
     let numeralConvertor = new NumeralConvertor
     expect(numeralConvertor.makeNumeral(9)).toEqual('IX')
   })
+  it('handles 10', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(10)).toEqual('X')
+  })
+  it('handles 11', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(11)).toEqual('XI')
+  })
 })
