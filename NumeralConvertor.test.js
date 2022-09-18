@@ -46,4 +46,20 @@ describe('makeNumeral', () => {
     let numeralConvertor = new NumeralConvertor
     expect(numeralConvertor.makeNumeral(11)).toEqual('XI')
   })
+  it('handles 14', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(14)).toEqual('XIV')
+  })
+  it('handles 17', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(17)).toEqual('XVII')
+  })
+  it('handles 19', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(19)).toEqual('XIX')
+  })
+  it('handles 20', () => {
+    let numeralConvertor = new NumeralConvertor
+    expect(numeralConvertor.makeNumeral(20)).toEqual('XX')
+  })
 })
